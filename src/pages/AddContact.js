@@ -1,23 +1,7 @@
 import { useAddContactMutation } from "../redux/contacts/contactsSlice";
 import { useState } from "react";
 import { nanoid } from "nanoid";
-import { useHistory, useNavigate } from "react-router-dom";
-
-// export const AddContactPage = () => {
-//     const [addContact] = useAddContactMutation();
-//     const handleSubmit = e => {
-//         e.preventDefault();
-//         console.log(e.currentTarget.value)
-//         // addContact(e.currentTarget.elements.content.value);
-//         e.currentTarget.reset();
-//     }
-//     return (<><h1>Add New Contact</h1>
-//         <form autoComplete="off" onSubmit={handleSubmit}>
-//             <p>Enter name</p><input type="text" name="newContactName" />
-//             <p>Enter phone number</p><input type="text" name="newContactPhone" />
-//             <button type="submit">Submit</button>
-//     </form></>
-//     )}
+import { useNavigate } from "react-router-dom";
 
 export const AddContactPage = () => {
   const [nameValue, setNameValue] = useState("");
